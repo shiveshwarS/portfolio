@@ -3,7 +3,7 @@ import { experience } from '../data/portfolioData'
 
 export default function ExperiencePage() {
   return (
-    <section className="py-24 px-4 min-h-screen">
+    <section className="py-16 sm:py-24 px-4 min-h-screen">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
           <span className="text-accent">Experience</span>
@@ -12,11 +12,11 @@ export default function ExperiencePage() {
           Professional journey and internships
         </p>
         <div className="relative">
-          <div className="absolute left-6 top-0 bottom-0 w-px bg-dark-500" />
+          <div className="absolute left-5 sm:left-6 top-0 bottom-0 w-px bg-dark-500" />
           <div className="space-y-8">
             {experience.map((item, index) => (
-              <div key={index} className="relative pl-16">
-                <div className="absolute left-4 top-1 p-2 bg-dark-700 border border-dark-500 rounded-full text-accent">
+              <div key={index} className="relative pl-14 sm:pl-16">
+                <div className="absolute left-3 sm:left-4 top-1 p-2 bg-dark-700 border border-dark-500 rounded-full text-accent">
                   {item.type === 'Internship' ? <HiBriefcase size={18} /> : <HiAcademicCap size={18} />}
                 </div>
                 <div className="bg-dark-800/50 border border-dark-600 rounded-xl p-6 hover:border-accent/30 transition-all duration-300">

@@ -5,7 +5,7 @@ const certUrl = (file) => `/certs/${encodeURI(file)}`
 
 export default function Certifications() {
   return (
-    <section className="py-24 px-4 min-h-screen bg-dark-800/30">
+    <section className="py-16 sm:py-24 px-4 min-h-screen bg-dark-800/30">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
           Certifications & <span className="text-accent">Credentials</span>
@@ -16,7 +16,7 @@ export default function Certifications() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {certifications.map((cert, index) => (
             <div key={index} className="bg-dark-700/50 border border-dark-500 rounded-xl overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 group flex flex-col">
-              <div className="relative w-full h-52 bg-dark-900">
+              <div className="relative w-full h-36 sm:h-52 bg-dark-900">
                 <embed
                   src={certUrl(cert.file)}
                   type="application/pdf"

@@ -6,8 +6,8 @@ export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-purple-500/5" />
-      <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-accent/10 rounded-full blur-3xl hidden sm:block" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl hidden sm:block" />
       <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full text-accent text-sm font-medium mb-6 border border-accent/20">
           <HiCode size={16} />
@@ -23,10 +23,10 @@ export default function Hero() {
           <HiDeviceMobile />
           <span>{personalInfo.title}</span>
         </div>
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
+        <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto mb-8">
           {personalInfo.bio}
         </p>
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
           <Link to="/projects" className="px-6 py-3 bg-accent text-dark-900 font-semibold rounded-xl hover:bg-accent-dark transition-colors shadow-lg shadow-accent/25">
             View My Work
           </Link>

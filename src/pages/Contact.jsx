@@ -4,7 +4,7 @@ import { personalInfo } from '../data/portfolioData'
 
 export default function ContactPage() {
   return (
-    <section className="py-24 px-4 min-h-screen bg-dark-800/30">
+    <section className="py-16 sm:py-24 px-4 min-h-screen bg-dark-800/30">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
           Get In <span className="text-accent">Touch</span>
@@ -12,7 +12,7 @@ export default function ContactPage() {
         <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
           Have a project in mind or just want to say hi? Let's connect!
         </p>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
           <div className="space-y-6">
             <div className="flex items-center gap-4 p-4 bg-dark-700/50 border border-dark-500 rounded-xl">
               <div className="p-3 bg-accent/10 rounded-xl text-accent">

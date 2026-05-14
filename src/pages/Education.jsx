@@ -3,7 +3,7 @@ import { education } from '../data/portfolioData'
 
 export default function EducationPage() {
   return (
-    <section className="py-24 px-4 min-h-screen bg-dark-800/30">
+    <section className="py-16 sm:py-24 px-4 min-h-screen bg-dark-800/30">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
           <span className="text-accent">Education</span>

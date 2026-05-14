@@ -6,7 +6,7 @@ export default function Projects() {
   const previewIcons = ['/preview/1.png', '/preview/2.png', '/preview/3.png']
 
   return (
-    <section className="py-24 px-4 min-h-screen">
+    <section className="py-16 sm:py-24 px-4 min-h-screen">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
           Featured <span className="text-accent">Projects</span>
@@ -22,7 +22,7 @@ export default function Projects() {
                   <img
                     src={previewIcons[index]}
                     alt={`${project.title} icon`}
-                    className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300"
+                    className="w-16 h-16 sm:w-20 sm:h-20 object-contain group-hover:scale-110 transition-transform duration-300"
                     onError={(e) => {
                       e.target.style.display = 'none'
                       e.target.nextSibling.style.display = 'flex'
