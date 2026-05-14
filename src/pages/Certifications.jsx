@@ -1,4 +1,4 @@
-import { HiDownload } from 'react-icons/hi'
+import { HiDownload, HiDocumentText } from 'react-icons/hi'
 import { certifications } from '../data/portfolioData'
 
 const certUrl = (file) => `/certs/${encodeURI(file)}`
@@ -16,13 +16,12 @@ export default function Certifications() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {certifications.map((cert, index) => (
             <div key={index} className="bg-dark-700/50 border border-dark-500 rounded-xl overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 group flex flex-col">
-              <div className="relative w-full h-36 sm:h-52 bg-dark-900">
-                <embed
-                  src={certUrl(cert.file)}
-                  type="application/pdf"
-                  className="w-full h-full pointer-events-none opacity-80"
-                />
+              <div className="hidden sm:block relative w-full h-52 bg-dark-900">
+                <embed src={certUrl(cert.file)} type="application/pdf" className="w-full h-full pointer-events-none opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-700/60 via-transparent to-dark-900/20" />
+              </div>
+              <div className="block sm:hidden relative w-full h-32 bg-gradient-to-br from-accent/5 to-purple-500/5 flex items-center justify-center">
+                <HiDocumentText className="text-gray-500" size={36} />
               </div>
               <div className="p-4 flex-1 flex flex-col">
                 <h3 className="font-semibold text-sm leading-tight mb-1">{cert.name}</h3>

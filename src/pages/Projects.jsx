@@ -3,8 +3,6 @@ import { FiGithub, FiFolder } from 'react-icons/fi'
 import { projects } from '../data/portfolioData'
 
 export default function Projects() {
-  const previewIcons = ['/preview/1.png', '/preview/2.png', '/preview/3.png']
-
   return (
     <section className="py-16 sm:py-24 px-4 min-h-screen">
       <div className="max-w-6xl mx-auto">
@@ -18,9 +16,9 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div key={index} className="bg-dark-800/50 border border-dark-600 rounded-2xl overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 group">
               <div className="h-40 flex items-center justify-center bg-gradient-to-br from-accent/5 to-purple-500/5">
-                {previewIcons[index] ? (
+                {project.icon ? (
                   <img
-                    src={previewIcons[index]}
+                    src={project.icon}
                     alt={`${project.title} icon`}
                     className="w-16 h-16 sm:w-20 sm:h-20 object-contain group-hover:scale-110 transition-transform duration-300"
                     onError={(e) => {

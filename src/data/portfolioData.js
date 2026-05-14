@@ -95,17 +95,20 @@ export const projects = [
     description: "A full-featured online music player inspired by Spotify. Features user authentication, playlist management, and music streaming. Built with a Node.js/Express backend and MongoDB for data storage.",
     tech: ["Flutter", "MongoDB", "Node.js", "Express"],
     links: { github: "https://github.com/shiveshwarS/Music-Player.git", live: "#" },
+    icon: "/preview/1.png",
   },
   {
     title: "Chat Application",
     description: "Real-time messaging app with timelines and badge-based user features. Uses Firebase and Supabase for authentication, notifications, and data synchronization.",
     tech: ["Flutter", "MongoDB", "Firebase", "Supabase"],
     links: { github: "https://github.com/agilesh-kk/chat_application.git", live: "#" },
+    icon: "/preview/2.png",
   },
   {
     title: "Grocery Manager",
     description: "A grocery management application built with Flutter and Firebase for seamless inventory and shopping list management.",
     tech: ["Flutter", "Firebase"],
     links: { github: "https://github.com/shiveshwarS/Grocery-App.git", live: "#" },
+    icon: "/preview/3.png",
   },
 ]
